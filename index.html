@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <title>Test-task</title>
+  </head>
+  <body>
+    <div class="body__wrapper">
+      <main>
+        <div class="main__wrapper">
+          <a href="#" class="cross__btn_link"></a>
+          <h1 class="main__title" data-i18n="Get Unlimited <br>Access">Get Unlimited Access</h1>
+
+          <div class="items__container">
+            <div class="item">
+              <picture>
+                <source srcset="/src/assets/images/Item-img_X2.webp" media="(min-resolution: 3dppx)">
+                <source srcset="/src/assets/images/Item-img_X2.webp" media="(min-resolution: 2dppx)">
+                <img src="/src/assets/images/Item-img_X2.webp" alt="item-img" class="item__img">
+              </picture>
+              <div class="item__gradient"></div>
+              <p class="item__text" data-i18n="Unlimited Art <br>Creation">Unlimited Art Creation</p>
+            </div>
+            <div class="item">
+              <picture>
+                <source srcset="/src/assets/images/Item1-img_X2.webp" media="(min-resolution: 3dppx)">
+                <source srcset="/src/assets/images/Item1-img_X2.webp" media="(min-resolution: 2dppx)">
+                <img src="/src/assets/images/Item1-img_X2.webp" alt="item-img" class="item__img">
+              </picture>
+              <div class="item__gradient"></div>
+              <p class="item__text" data-i18n="Exclusive <br>Styles">Exclusive Styles</p>
+            </div>
+            <div class="item">
+              <picture>
+                <source srcset="/src/assets/images/Item2-img_X2.webp" media="(min-resolution: 3dppx)">
+                <source srcset="/src/assets/images/Item2-img_X2.webp" media="(min-resolution: 2dppx)">
+                <img src="/src/assets/images/Item2-img_X2.webp" alt="item-img" class="item__img">
+              </picture>
+              <div class="item__gradient"></div>
+              <p class="item__text" data-i18n="Magic Avatars <br>With 20% Off">Magic Avatars With 20% Off</p>
+            </div>
+          </div>
+
+          <div class="plans">
+            <div id="apple" class="plan best-offer">
+              <div class="plan__slat" data-i18n="BEST OFFER">best offer</div>
+              <div class="plan__text">
+                <p class="plan__title" data-i18n="YEARLY ACCESS">Yearly access</p>
+                <p class="plan__subtitle" data-i18n="Just {{price}} per year" data-price-key="yearly">Just $39.99 per year</p>
+              </div>
+              <p class="plan__price" data-i18n="{{price}} <br>per week" data-price-key="bestOffer">$0.48<br> per week</p>
+            </div>
+
+            <div id="google" class="plan active">
+              <p class="plan__title" data-i18n="WEEKLY ACCESS">Weekly access</p>
+              <p class="plan__price" data-i18n="{{price}} <br>per week" data-price-key="weekly">$6.99<br> per week</p>
+            </div>
+            <button class="plan__btn" data-i18n="Continue">Continue</button>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <ul class="links__list">
+            <li class="link__item">
+              <a href="#" class="link" data-i18n="Terms of Use">Terms of Use</a>
+            </li>
+            <li class="link__item">
+              <a href="#" class="link" data-i18n="Privacy Policy">Privacy Policy</a>
+            </li>
+            <li class="link__item">
+              <a href="#" class="link" data-i18n="Restore">Restore</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
